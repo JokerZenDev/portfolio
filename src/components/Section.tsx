@@ -10,11 +10,13 @@ for (let i = 1; i <= 100; i++) {
 export default function Section({
 	title,
 	id,
+	variables,
 	children,
 }: {
 	title: string
 	id: string
-	children: React.ReactNode
+	variables?: { name: string; value: string }[]
+	children?: React.ReactNode
 }) {
 	return (
 		<div className='h-screen flex place-items-center' id={id}>
@@ -41,18 +43,33 @@ export default function Section({
 							))}
 						</div>
 					</div>
-					<div className='flex flex-col items-start max-w-[50rem] py-1 px-2 ml-10 gap-0'>
+					<div className='flex flex-col items-start max-w-[50rem] py-1 px-2 pr-4 ml-10 gap-0'>
 						<div className='text-white'>
 							<TextTransparent>const </TextTransparent>
 							{title}
 							<TextTransparent>{" = () => {"}</TextTransparent>
 						</div>
 						<div className='text-left pl-8'>
-							<TextTransparent>return (</TextTransparent>
-							<div className='whitespace-pre-wrap break-words pl-8'>
-								{children}
-							</div>
-							<TextTransparent>)</TextTransparent>
+							{variables &&
+								variables.map(({ name, value }) => (
+									<div>
+										<TextTransparent>
+											const{" "}
+										</TextTransparent>
+										{name}
+										<TextTransparent> = </TextTransparent>
+										{value}
+									</div>
+								))}
+							{children && (
+								<>
+									<TextTransparent>return (</TextTransparent>
+									<div className='whitespace-pre-wrap break-words pl-8'>
+										{children}
+									</div>
+									<TextTransparent>)</TextTransparent>
+								</>
+							)}
 						</div>
 						<TextTransparent>{`}`}</TextTransparent>
 					</div>

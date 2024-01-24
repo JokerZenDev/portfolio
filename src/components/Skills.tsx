@@ -1,12 +1,12 @@
 import Section from "./Section"
 
-const ABOUT_TEXT =
-	"Hi, I'm Michele lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, consectetur voluptatem. Voluptatum molestiae impedit earum nihil nulla consequatur dolores molestias quis unde expedita? Commodi quo ipsa ex, quae quasi dolore."
-
 export default function Skills() {
+	const skills = [
+		{ name: "Front-end", value: "React, NextJS, JS, TS, CSS, TailwindCSS" },
+		{ name: "Back-end", value: "NodeJS, PHP, Python, MySQL" },
+		{ name: "Other", value: "Git, Google Cloud Platform" },
+	]
 	return (
-		<Section title='Skills' id='skills'>
-			{ABOUT_TEXT}
-		</Section>
+		<Section title='Skills' id='skills' variables={skills} />
 	)
 }

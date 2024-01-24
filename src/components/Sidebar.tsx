@@ -7,7 +7,7 @@ import {
 	FiInfo,
 	FiPackage,
 } from "react-icons/fi"
-import logo from "./assets/logo.svg"
+import logo from "../assets/logo.svg"
 import TextTransparent from "./TextTransparent"
 
 export default function Sidebar() {
