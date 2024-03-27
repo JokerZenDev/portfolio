@@ -9,10 +9,11 @@ import {
 } from "react-icons/fi"
 import logo from "../assets/logo.svg"
 import TextTransparent from "./TextTransparent"
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa"
 
 export default function Sidebar() {
 	return (
-		<div className='flex flex-col justify-between items-start w-1/5 h-screen px-6 py-16 border-r border-[#779]'>
+		<div className='flex flex-col justify-between items-start w-1/5 h-screen px-6 py-16 border-r border-black'>
 			<div className='text-4xl flex justify-center w-full'>
 				<img src={logo} alt='logo' className='w-100' />
 			</div>
@@ -86,7 +87,23 @@ export default function Sidebar() {
 					</li>
 				</ul>
 			</div>
-			<div>socials</div>
+			<div className='flex gap-6 w-full justify-center'>
+				<a href='https://github.com/JokerZenDev' target='_blank'>
+					<FaGithub className='h-8 w-8' />
+				</a>
+				<a
+					href='https://www.linkedin.com/in/michele-lenzi-6386a1151/'
+					target='_blank'
+				>
+					<FaLinkedin className='h-8 w-8' />
+				</a>
+				<a
+					href='https://www.youtube.com/@MikyInDevMode'
+					target='_blank'
+				>
+					<FaYoutube className='h-8 w-8' />
+				</a>
+			</div>
 		</div>
 	)
 }

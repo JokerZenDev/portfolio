@@ -57,8 +57,9 @@ export default function Section({
 											const{" "}
 										</TextTransparent>
 										{name}
-										<TextTransparent> = </TextTransparent>
+										<TextTransparent> = {"["}</TextTransparent>
 										{value}
+										<TextTransparent>{"]"}</TextTransparent>
 									</div>
 								))}
 							{children && (

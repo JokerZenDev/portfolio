@@ -6,7 +6,7 @@ function App() {
 	return (
 		<main className='flex w-full items-start'>
 			<Sidebar />
-			<div className='max-h-screen w-full overflow-scroll'>
+			<div className='max-h-screen w-full overflow-auto'>
 				<div className='flex flex-col gap-4 w-full h-full items-center'>
 					<About />
 					<Skills />
