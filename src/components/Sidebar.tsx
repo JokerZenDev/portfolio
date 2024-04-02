@@ -7,17 +7,19 @@ import {
 	FiInfo,
 	FiPackage,
 } from "react-icons/fi"
-import logo from "../assets/logo.svg"
 import TextTransparent from "./TextTransparent"
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa"
 
+const LINKS = [
+	// { name: "Home", href: "#home" },
+	{ name: "About", href: "#about" },
+	{ name: "Skills", href: "#skills" },
+	{ name: "Projects", href: "#projects" },
+]
+
 export default function Sidebar() {
 	return (
-		<div className='flex flex-col justify-between items-start w-1/5 h-screen px-6 py-16 border-r border-black'>
-			<div className='text-4xl flex justify-center w-full'>
-				<img src={logo} alt='logo' className='w-100' />
-			</div>
-			{/* <div>logo</div> */}
+		<div className='flex flex-col justify-between items-start w-1/5 h-[calc(100vh-5rem)] p-6 border-r border-black'>
 			<div className='flex flex-col gap-2 text-lg'>
 				<ul className='flex flex-col gap-2'>
 					<li>
@@ -43,27 +45,18 @@ export default function Sidebar() {
 					</li>
 					<li>
 						<ul className='flex flex-col gap-2 pl-10'>
-							<li className='flex items-center gap-2'>
-								<FiFileText />
-								<a href='#about'>
-									About
-									<TextTransparent>.tsx</TextTransparent>
-								</a>
-							</li>
-							<li className='flex items-center gap-2'>
-								<FiFile />
-								<a href='#skills'>
-									Skills
-									<TextTransparent>.tsx</TextTransparent>
-								</a>
-							</li>
-							<li className='flex items-center gap-2'>
-								<FiFile />
-								<a href='#skills'>
-									Projects
-									<TextTransparent>.tsx</TextTransparent>
-								</a>
-							</li>
+							{LINKS.map((link) => (
+								<li
+									key={link.name}
+									className='flex items-center gap-2'
+								>
+									<FiFileText />
+									<a href={link.href}>
+										{link.name}
+										<TextTransparent>.tsx</TextTransparent>
+									</a>
+								</li>
+							))}
 						</ul>
 					</li>
 					<li>
@@ -74,8 +67,8 @@ export default function Sidebar() {
 					</li>
 					<li className='flex items-center gap-2'>
 						<FiInfo />
-						<a href='mailto:s0Ig6@example.com'>
-							CONTACTME
+						<a href='/resume'>
+							RESUME
 							<TextTransparent>.md</TextTransparent>
 						</a>
 					</li>
