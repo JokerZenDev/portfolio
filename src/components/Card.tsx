@@ -66,7 +66,8 @@ export default function Card({
 													{href ? (
 														<a
 															href={value}
-															className='underline'
+															target="_blank"
+															rel="noreferrer"
 														>
 															{name}
 														</a>
@@ -81,6 +82,8 @@ export default function Card({
 														<a
 															href={value}
 															className='underline'
+															target="_blank"
+															rel="noreferrer"
 														>
 															{value}
 														</a>
