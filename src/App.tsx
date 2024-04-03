@@ -21,7 +21,7 @@ function App() {
 								</span>
 							</div>
 							<a
-								href='mailto:s0Ig6@example.com'
+								href='mailto:michelle.lenzi98@gmail.com'
 								className='h-full text-xl flex items-center'
 							>
 								Contact me

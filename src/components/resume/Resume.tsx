@@ -25,15 +25,15 @@ export default function Resume() {
 						<div className='flex gap-8 text-sm items-center'>
 							<div className='flex items-center gap-2'>
 								<FiPhone />
-								<span>+39 333 333 333</span>
+								<a href='tel:+393490612423'>+39 3490612423</a>
 							</div>
 							<div className='flex items-center gap-2'>
 								<FiMail />
-								<span>s0Ig6@example.com</span>
+								<a href='mailto:michele.lenzi98@gmail.com'>michele.lenzi98@gmail.com</a>
 							</div>
 							<div className='flex items-center gap-2'>
 								<FiGlobe />
-								<span>https://www.linkedin.com</span>
+								<a href='https://jokerzen.dev'>https://jokerzen.dev</a>
 							</div>
 						</div>
 					</div>
