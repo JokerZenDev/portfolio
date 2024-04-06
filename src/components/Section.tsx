@@ -11,7 +11,7 @@ export default function Section({
 }) {
 	return (
 		<div
-			className={`h-[calc(100vh-5rem)] flex w-full items-center ${isCentered ? "justify-center" : "justify-start"} gap-16 overflow-auto p-16`}
+			className={`lg:h-[calc(100vh-5rem)] flex flex-col lg:flex-row w-full items-center ${isCentered ? "justify-center" : "justify-start"} gap-16 overflow-auto py-8 md:p-16`}
 			id={id}
 		>
 			{children}

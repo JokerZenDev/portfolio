@@ -25,7 +25,7 @@ export default function Resume() {
 						<div className='flex gap-8 text-sm items-center'>
 							<div className='flex items-center gap-2'>
 								<FiPhone />
-								<a href='tel:+393490612423'>+39 3490612423</a>
+								<a href='tel:+393490612423' className="whitespace-nowrap">+39 3490612423</a>
 							</div>
 							<div className='flex items-center gap-2'>
 								<FiMail />

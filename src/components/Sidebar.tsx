@@ -19,7 +19,7 @@ const LINKS = [
 
 export default function Sidebar() {
 	return (
-		<div className='flex flex-col justify-between items-start w-1/5 h-[calc(100vh-5rem)] p-6 border-r border-black'>
+		<div className='absolute -left-full flex lg:relative lg:left-0 lg:flex-col justify-between items-start min-w-fit w-1/5 h-[calc(100vh-5rem)] p-6 border-r border-black'>
 			<div className='flex flex-col gap-2 text-lg'>
 				<ul className='flex flex-col gap-2'>
 					<li>
@@ -44,7 +44,7 @@ export default function Sidebar() {
 						</TextTransparent>
 					</li>
 					<li>
-						<ul className='flex flex-col gap-2 pl-10'>
+						<ul className='flex flex-col gap-2 pl-8 2xl:pl-10'>
 							{LINKS.map((link) => (
 								<li
 									key={link.name}
