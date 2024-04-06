@@ -8,6 +8,7 @@ import {
 } from "react-icons/fi"
 import TextTransparent from "./TextTransparent"
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 const LINKS = [
 	// { name: "Home", href: "#home" },
@@ -66,10 +67,10 @@ export default function Sidebar() {
 					</li>
 					<li className='flex items-center gap-2'>
 						<FiInfo />
-						<a href='/resume'>
+						<Link to='/resume'>
 							RESUME
 							<TextTransparent>.md</TextTransparent>
-						</a>
+						</Link>
 					</li>
 					<li>
 						<TextTransparent className='flex items-center gap-2'>
