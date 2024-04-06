@@ -1,6 +1,5 @@
 import {
 	FiChevronRight,
-	FiFile,
 	FiFileText,
 	FiFolder,
 	FiGitBranch,
