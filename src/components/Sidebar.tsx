@@ -67,7 +67,7 @@ export default function Sidebar() {
 					</li>
 					<li className='flex items-center gap-2'>
 						<FiInfo />
-						<Link to='/resume'>
+						<Link to='/resume' target='_blank'>
 							RESUME
 							<TextTransparent>.md</TextTransparent>
 						</Link>
