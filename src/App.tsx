@@ -16,7 +16,7 @@ function App() {
 						<div className='w-full h-20 flex items-center justify-between px-4 py-2 border-b border-black'>
 							<div className='h-full flex gap-4 items-center'>
 								<img src={logo} alt='logo' className='h-full' />
-								<span className='text-3xl'>
+								<span className='hidden lg:block text-3xl'>
 									Michele's Portfolio
 								</span>
 							</div>
