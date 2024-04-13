@@ -9,8 +9,7 @@ const PROJECTS = [
 		additionalInfo: [
 			{ name: "stack", value: "NextJS, Sanity.io, TS, TailwindCSS" },
 			{ name: "github", value: "https://github.com/JokerZenDev/il-barchetto", href: true },
-			// { name: "preview", value: "https://www.agriturismobarchetto.com/" },
-			{ name: "preview", value: "soon" },
+			{ name: "preview", value: "https://www.agriturismobarchetto.com/" },
 		],
 	},
 	{
