@@ -21,7 +21,7 @@ const PROJECTS = [
 	{
 		title: "MyPortfolio",
 		description: "My portfolio website built with Vite and React TS.",
-		img: "/portfolio.png",
+		img: "/portfolio.jpg",
 		stack: ["Vite", "React", "TypeScript"],
 		github: "https://github.com/JokerZenDev/portfolio",
 		preview: "https://jokerzen.dev",
