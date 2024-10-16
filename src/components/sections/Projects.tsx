@@ -53,8 +53,8 @@ export function Projects() {
                     ))}
                   </div>
                   <div className="flex space-x-4">
-                    {project.github && <Button variant="outline" className="text-sky-400 border-sky-400 hover:bg-sky-400 hover:text-gray-900" key={index}>GitHub</Button>}
-                    {project.preview && <Button variant="outline" className="border-sky-400 bg-sky-400 text-gray-900 hover:bg-sky-500 hover:text-gray-900" key={index}>Preview</Button>}
+                    {project.github && <a href={project.github} target="_blank"><Button variant="outline" className="text-sky-400 border-sky-400 hover:bg-sky-400 hover:text-gray-900" key={index}>GitHub</Button></a>}
+                    {project.preview && <a href={project.preview} target="_blank"><Button variant="outline" className="border-sky-400 bg-sky-400 text-gray-900 hover:bg-sky-500 hover:text-gray-900" key={index}>Preview</Button></a>}
                   </div>
                 </div>
               ))}
