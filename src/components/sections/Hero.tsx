@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import { TypeAnimation } from "react-type-animation"
 import { SOCIALS } from "@/lib/constants"
 
-const HERO_TEXT = "Full Stack Developer with over 6 years of experience. I have a genuine love for crafting digital experiences from scratch and thrive on the excitement of learning new things every day. I have honed my skills in both front-end and back-end development."
+const HERO_TEXT = "Full Stack Developer & Freelancer with over 6 years of experience. I have a genuine love for crafting digital experiences from scratch and thrive on the excitement of learning new things every day. I have honed my skills in both front-end and back-end development."
 
 export function Hero() {
   return (
@@ -24,6 +24,8 @@ export function Hero() {
                   <TypeAnimation
                     sequence={[
                       'Michele Lenzi',
+                      1000,
+                      'Freelancer',
                       1000,
                       'Full Stack Developer',
                       1000,
