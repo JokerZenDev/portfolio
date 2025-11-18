@@ -1,5 +1,5 @@
 const SKILLS = [
-  "TypeScript", "Python", "NextJS", "React", "React Native", "PHP",
+  "Python", "FastAPI", "PostgreSQL", "TypeScript", "NextJS", "React",
   "GCP", "Docker"
 ]
 
