@@ -3,6 +3,22 @@ import { Button } from "../ui/button";
 
 const PROJECTS = [
 	{
+		title: "Dog Train PRO",
+		description: "Dog Train PRO website built with NextJS and TypeScript. This project is for dog trainers to manage their clients and bookings.",
+		img: "/dog-train-pro.png",
+		stack: ["NextJS", "TypeScript"],
+		github: null,
+		preview: "https://www.dogtrain.pro/",
+	},
+	{
+		title: "Valueize",
+		description: "Valueize website built with React and FastAPI. This project is a tool to help startups/SMEs create and manage their financial models and to find the best funding options.",
+		img: "/valueize.png",
+		stack: ["React", "FastAPI", "PostgreSQL"],
+		github: null,
+		preview: "https://www.valueize.com/",
+	},
+	{
 		title: "IlBarchetto",
 		description: "Il Barchetto website built with NextJS 14 and Sanity.io CMS. This project is my first freelance project and I am proud of it.",
 		img: "/il-barchetto.png",
@@ -10,22 +26,22 @@ const PROJECTS = [
 		github: "https://github.com/JokerZenDev/il-barchetto",
 		preview: "https://www.agriturismobarchetto.com/",
 	},
-	{
-		title: "MontecarloETF",
-		description: "MonteCarloETF website built with NextJS and MongoDB. This is a personal project to simulate the results of an investment using ETF.",
-		img: "/montercarlo-etf.png",
-		stack: ["NextJS", "MongoDB", "TypeScript"],
-		github: "https://github.com/JokerZenDev/montecarlo-etf",
-		preview: "https://montecarlo-etf.jokerzen.dev",
-	},
-	{
-		title: "MyPortfolio",
-		description: "My portfolio website built with Vite and React TS.",
-		img: "/portfolio.jpg",
-		stack: ["Vite", "React", "TypeScript"],
-		github: "https://github.com/JokerZenDev/portfolio",
-		preview: "https://jokerzen.dev",
-	},
+	// {
+	// 	title: "MontecarloETF",
+	// 	description: "MonteCarloETF website built with NextJS and MongoDB. This is a personal project to simulate the results of an investment using ETF.",
+	// 	img: "/montercarlo-etf.png",
+	// 	stack: ["NextJS", "MongoDB", "TypeScript"],
+	// 	github: "https://github.com/JokerZenDev/montecarlo-etf",
+	// 	preview: "https://montecarlo-etf.jokerzen.dev",
+	// },
+	// {
+	// 	title: "MyPortfolio",
+	// 	description: "My portfolio website built with Vite and React TS.",
+	// 	img: "/portfolio.jpg",
+	// 	stack: ["Vite", "React", "TypeScript"],
+	// 	github: "https://github.com/JokerZenDev/portfolio",
+	// 	preview: "https://jokerzen.dev",
+	// },
 ]
 
 export function Projects() {
